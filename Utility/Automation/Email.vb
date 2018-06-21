@@ -1,5 +1,5 @@
 ﻿Namespace Automation
-
+    ' Smtp settings need to be setup in config file or from external call
     Public Class SmtpDetails
         Private _smtpServer As String
         Public Property SmtpServer() As String
