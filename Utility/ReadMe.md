@@ -7,7 +7,7 @@ Utility classes and functions
 <li>Finance, such as formatting to local currency
 <li>Internationalisation, such as formatting to local currency
 <li>IO, such as file upload/delete file
-<li>Messages, Memebership
+<li>Messages, Membership
 <li>Secure, such as encryption and strings
 <li>Visual, such as time display etc
 <ul>
