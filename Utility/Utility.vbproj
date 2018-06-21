@@ -45,6 +45,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +65,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automation\Email.vb" />
+    <Compile Include="Common\CommonFunctions.vb" />
+    <Compile Include="Finance\Currency.vb" />
+    <Compile Include="Internationalisation\Formatting.vb" />
+    <Compile Include="IO\FileHandler.vb" />
+    <Compile Include="Messages\MembershipCreateStatus.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -78,6 +86,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Secure\Encryption.vb" />
+    <Compile Include="Secure\Strings.vb" />
+    <Compile Include="Security\Authentication.vb" />
+    <Compile Include="Visual\Display.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -86,6 +98,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Utility.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -97,6 +110,24 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Utility.vbproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Utility.vbproj.GenerateResource.cache" />
+    <None Include="ReadMe.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Utility.dll" />
+    <Content Include="bin\Debug\Utility.pdb" />
+    <Content Include="bin\Debug\Utility.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Debug\Utility.dll" />
+    <Content Include="obj\Debug\Utility.pdb" />
+    <Content Include="obj\Debug\Utility.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Utility.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
